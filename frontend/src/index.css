@@ -1,0 +1,235 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+@import 'swiper/css/navigation';
+
+
+/*Menu custom*/
+
+body {
+    font-size: 16px;
+  }
+  
+  .navbar {
+    width: 100%;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar .menu-items {
+    display: flex;
+  }
+  
+  .navbar .nav-container li {
+    list-style: none;
+  }
+  
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 4px;
+    left: 26px;
+    z-index: 99;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+
+  .nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 25px;
+    right: 26px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  .open .hamburger-lines .line{
+    background: #000000;
+  }
+  
+  
+  .nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar .menu-items {
+    padding-top: 120px;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    position: relative;
+    z-index: 30;
+  }
+  
+  .navbar .menu-items ul li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .nav-container.open .menu-items {
+    transform: translateX(0);
+  }
+  
+  .nav-container.open .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container.open .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container.open .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .fancy-menu li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #24abd5;
+  }
+  
+  .fancy-menu li a:hover::before {
+    width: 100%;
+  }
+
+  .fancy-menu li a:hover {
+    color: #24abd5;
+  }
+  
+  .fancy-menu li a.activeMenu::before {
+    width: 100%;
+  }
+  
+  .spacer-fixed {
+    height: 64px;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 22px;
+    background-color: #808080;
+    color: #ffffff;
+    padding: .5rem .8rem;
+    border-radius: 999px;
+    width: 38px;
+  }
+  .swiper-button-next {
+    right: -20px;
+  }
+  .swiper-button-prev {
+    left: -25px;
+  }
+
+  .pagos img{
+    margin: auto;
+  }
+
+  @media (width < 480px) {
+    .swiper-button-next {
+      right: 0;
+    }
+    .swiper-button-prev {
+      left: 0;
+    }
+  }
+
+
+  
+  
+  
+  /*Menu custom*/
+
+  @font-face {
+    font-family: "Futura-Heavy";
+    src: url("assets/fonts/Futura-Heavy.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Futura-Bold";
+    src: url("assets/fonts/Futura-Bold.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Futura-Light";
+    src: url("assets/fonts/futura-light-bt.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Futura-Medium";
+    src: url("assets/fonts/futura-medium.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Myriad-Regular";
+    src: url("assets/fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
+    font-display: swap;
+  }
+
+  @theme {
+
+    --font-futura-heavy: "Futura-Heavy", sans-serif;
+    --font-futura-bold: "Futura-Bold", sans-serif;
+    --font-futura-light: "Futura-Light", sans-serif;
+    --font-futura-medium: "Futura-Medium", sans-serif;
+    --font-myriad-regular: "Myriad-Regular", sans-serif;
+
+    --max-width-8xl: 1800px;
+
+    --color-chinese-black: #161616;
+    --color-charged-blue: #24abd5;
+
+  }
