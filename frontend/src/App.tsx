@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import ScrollToTop from "./helpers/ScrollToTop"
 import Inicio from "./pages/Inicio"
 import Servicios from "./pages/Servicios"
+import Paquetes from "./pages/Paquetes"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
          <Route path="/" element={<Inicio />} />
          <Route path="/servicios" element={<Servicios />} />
+         <Route path="/paquetes" element={<Paquetes />} />
       </Routes>
       <Footer />
     </Router>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <section className="bg-black">
-        <div className="flex flex-col md:flex-row justify-between md:items-center text-white font-futura-light max-w-5xl 2xl:max-w-7xl mx-auto md:py-10 pb-6 md:pb-0">
+        <div className="flex flex-col md:flex-row justify-between md:items-center text-white font-futura-light max-w-5xl 2xl:max-w-7xl mx-auto  md:py-10 pb-6 ">
             <img className="h-18 object-contain " src={`${domain}wp-content/uploads/2025/03/logo-white.webp`} alt="Gotravel logo" />
             <div className="flex flex-col gap-6 md:flex-row md:gap-20 ps-4 md:ps-0 pt-6 md:pt-0">
                 <div className="flex flex-col gap-2 flex-1">

@@ -214,6 +214,12 @@ body {
   }
 
   @font-face {
+    font-family: "Futura-Regular";
+    src: url("assets/fonts/futura-regular.ttf");
+    font-display: swap;
+  }
+
+  @font-face {
     font-family: "Myriad-Regular";
     src: url("assets/fonts/MYRIADPRO-REGULAR.OTF") format("opentype");
     font-display: swap;
@@ -225,6 +231,7 @@ body {
     --font-futura-bold: "Futura-Bold", sans-serif;
     --font-futura-light: "Futura-Light", sans-serif;
     --font-futura-medium: "Futura-Medium", sans-serif;
+    --font-futura-regular: "Futura-Regular", sans-serif;
     --font-myriad-regular: "Myriad-Regular", sans-serif;
 
     --max-width-8xl: 1800px;
