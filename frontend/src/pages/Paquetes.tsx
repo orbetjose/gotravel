@@ -1,16 +1,16 @@
+import HeroBanner from "../components/HeroBanner";
+
 export default function Paquetes() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
+  const banner = domain + "wp-content/uploads/2025/03/paquetes-slide.webp";
 
   return (
     <>
       <h1></h1>
-      <section className="relative h-screen">
-        <img
-          className="h-screen w-full object-cover object-center absolute"
-          src={`${domain}wp-content/uploads/2025/03/paquetes-slide.webp`}
-          alt="Fondo"
-        />
-      </section>
+      <HeroBanner 
+        banner={banner}
+        object_position="center"
+      />
       <section className="bg-black py-16 px-4 md:px-0">
         <div className="flex flex-col gap-8 md:gap-0 md:flex-row max-w-5xl mx-auto">
           <div className="flex-1 text-white">

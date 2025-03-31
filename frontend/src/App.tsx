@@ -5,6 +5,7 @@ import ScrollToTop from "./helpers/ScrollToTop"
 import Inicio from "./pages/Inicio"
 import Servicios from "./pages/Servicios"
 import Paquetes from "./pages/Paquetes"
+import Todo from "./pages/Todo"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
          <Route path="/" element={<Inicio />} />
          <Route path="/servicios" element={<Servicios />} />
          <Route path="/paquetes" element={<Paquetes />} />
+         <Route path="/todo-incluido" element={<Todo />} />
       </Routes>
       <Footer />
     </Router>

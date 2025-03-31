@@ -53,7 +53,7 @@ export default function Header() {
                           isActive && window.location.pathname === relativePath
                             ? "activeMenu"
                             : ""
-                        } font-poppins-regular pb-1 relative text-white`
+                        } font-object-regular pb-1 relative text-white`
                       }
                       to={relativePath}
                     >
@@ -76,7 +76,7 @@ export default function Header() {
               <div className="menu-items">
                 <ul
                   id="mobile-menu"
-                  className="items-center justify-center md:hidden text-sm 2xl:text-base gap-4 fancy-menu"
+                  className="items-center justify-center md:hidden text-sm  gap-4 fancy-menu"
                 >
                   {menuItems.map((item, index) => {
                     const relativePath = new URL(
@@ -91,7 +91,7 @@ export default function Header() {
                               window.location.pathname === relativePath
                                 ? "activeMenu"
                                 : ""
-                            } font-poppins-regular pb-1 relative `
+                            } font-object-regular pb-1 relative `
                           }
                           to={relativePath}
                           onClick={closeMenu}

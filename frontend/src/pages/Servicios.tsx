@@ -1,18 +1,15 @@
+import HeroBanner from "../components/HeroBanner";
+
 export default function Servicios() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
+  const banner = domain + "wp-content/uploads/2025/03/slide-servicios.webp";
 
   return (
     <>
-      <section>
-        <div className="h-[100vh]">
-          <h1 className="hidden">Servicios</h1>
-          <img
-            className="h-full w-full object-cover object-top"
-            src={`${domain}wp-content/uploads/2025/03/slide-servicios.webp`}
-            alt=""
-          />
-        </div>
-      </section>
+      <HeroBanner 
+        banner={banner}
+        object_position="top"
+      />
       <section>
         <div className="bg-chinese-black py-6 md:flex justify-center gap-10 font-futura-light text-white text-lg">
           <div className="flex flex-col gap-2 items-center ">
@@ -40,7 +37,7 @@ export default function Servicios() {
         <div className="h-[70vh] 2xl:h-[60vh] relative flex flex-col items-start justify-end text-white">
           <img
             className="h-full w-full object-cover object-top absolute"
-            src={`${domain}wp-content/uploads/2025/03/todo-incluido.webp`}
+            src={`${domain}wp-content/uploads/2025/03/todo-incluido-banner.webp`}
             alt="Todo incluido"
           />
           <div className="relative z-10 md:ml-20 md:mb-20 ml-6 mb-6 mr-6">

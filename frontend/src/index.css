@@ -225,6 +225,12 @@ body {
     font-display: swap;
   }
 
+  @font-face {
+    font-family: "Object-Regular";
+    src: url("assets/fonts/ObjectSansRegular.otf") format("opentype");
+    font-display: swap;
+  }
+
   @theme {
 
     --font-futura-heavy: "Futura-Heavy", sans-serif;
@@ -233,6 +239,7 @@ body {
     --font-futura-medium: "Futura-Medium", sans-serif;
     --font-futura-regular: "Futura-Regular", sans-serif;
     --font-myriad-regular: "Myriad-Regular", sans-serif;
+    --font-object-regular: "Object-Regular", sans-serif;
 
     --max-width-8xl: 1800px;
 
