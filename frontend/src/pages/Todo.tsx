@@ -9,7 +9,6 @@ import CintilloIcon from "../components/CintilloIcon";
 export default function Todo() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
   const [ofertas, setOfertas] = useState<Ofertas[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
   const infoCintillo = {
     item1: {
       image: `${domain}wp-content/uploads/2025/03/diversion-icon.png`,
@@ -27,17 +26,12 @@ export default function Todo() {
 
   const banner = domain + "wp-content/uploads/2025/03/slide-todo.webp";
 
+
+
   useEffect(() => {
-    Promise.all([
-      getPageInfo("todo-incluido")
-        .then((data) => setOfertas(data))
-        .catch((error) => {
-          console.error("Error fetching home info:", error);
-          return null;
-        }),
-    ]).finally(() => {
-      setIsLoaded(true);
-    });
+    getPageInfo("todo-incluido")
+      .then((data) => setOfertas(data))
+      .catch((error) => console.error("Error fetching menu:", error));
   }, []);
 
   return (

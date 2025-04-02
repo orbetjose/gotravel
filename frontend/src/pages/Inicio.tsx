@@ -10,7 +10,6 @@ import CintilloIcon from "../components/CintilloIcon";
 export default function Inicio() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
   const [ofertas, setOfertas] = useState<Ofertas[]>([]);
-  const [isLoaded, setIsLoaded] = useState(false);
   const infoCintillo = {
     item1: {
       image: `${domain}wp-content/uploads/2025/03/icon-1.webp`,
@@ -28,20 +27,12 @@ export default function Inicio() {
       image: `${domain}wp-content/uploads/2025/03/icon-4.webp`,
       text: "Planes al destino que quieras",
     },
-
-  }
+  };
 
   useEffect(() => {
-    Promise.all([
-      getPageInfo("inicio")
-        .then((data) => setOfertas(data))
-        .catch((error) => {
-          console.error("Error fetching home info:", error);
-          return null;
-        }),
-    ]).finally(() => {
-      setIsLoaded(true);
-    });
+    getPageInfo("inicio")
+      .then((data) => setOfertas(data))
+      .catch((error) => console.error("Error fetching menu:", error));
   }, []);
 
   return (
@@ -293,7 +284,7 @@ export default function Inicio() {
         </div>
       </section>
       <section>
-        <div className="bg-black py-10 px-4 md:px-0 relative">
+        <div className="bg-black py-14 px-4 md:px-0 relative">
           <div className=" relative">
             <img
               className="absolute w-full h-full object-cover"
@@ -345,6 +336,71 @@ export default function Inicio() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="relative">
+          <img className="h-[50vh] md:h-[80vh] w-full object-cover object-top" src={`${domain}/wp-content/uploads/2025/04/fondo-we-care-you.webp`} alt="" />
+          <a href="" className="absolute md:bottom-20 bottom-4 left-1/2 -translate-x-1/2 bg-white text-charged-blue font-futura-heavy block w-fit text-lg px-4 py-1 rounded-lg">Más información</a>
+        </div>
+      </section>
+      <section className="bg-black py-10 px-4 md:px-0">
+        <div className="max-w-5xl mx-auto">
+          <div>
+            <h4 className="text-white text-center md:text-4xl text-2xl font-futura-heavy">
+              Blog
+            </h4>
+            <p className="text-white text-center md:text-lg py-4 font-futura-light">
+              <span className="text-charged-blue">Noticias del</span> sector
+              turistico
+            </p>
+            <div className="border-b-2 border-charged-blue w-[150px] mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-4 mt-8">
+            {[...Array(3)].map((_, index) => (
+              <div className="flex flex-col bg-white text-black" key={index}>
+                <img
+                  src={`${domain}wp-content/uploads/2025/04/article-1.webp`}
+                  alt=""
+                />
+                <div className="flex flex-col px-3 py-1 gap-3">
+                  <div className="flex justify-between items-center font-futura-heavy text-sapphire-blue">
+                    <span>Donec pede justo,</span>
+                    <span className="text-xs">12/03/2024</span>
+                  </div>
+
+                  <p className="font-futura-light leading-[normal]">
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                    venenatis vitae, justo
+                  </p>
+                  <a
+                    className="font-futura-heavy text-charged-blue underline"
+                    href="#"
+                  >
+                    Ver más
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href=""
+              className="bg-white text-charged-blue font-futura-heavy text-lg px-4 py-2 rounded-lg"
+            >
+              Ver todas las noticias
+            </a>
+          </div>
+        </div>
+        <div className="flex mt-20 max-w-6xl 2xl:mx-auto">
+          <div className="md:block hidden">
+            <img className="w-full h-full object-cover object-top" src={`${domain}wp-content/uploads/2025/04/imagen-form.webp`} alt="" />
+          </div>
+          <div className="md:text-right text-white flex-2 text-center">
+              <h5 className="font-futura-heavy md:text-4xl text-3xl">Contacto</h5>
+              <p className="font-object-regular">Nosotros te ayudamos a elegir tu próximo destino</p>
           </div>
         </div>
       </section>

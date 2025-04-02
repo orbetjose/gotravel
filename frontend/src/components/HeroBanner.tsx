@@ -4,7 +4,6 @@ type HeroBannerProps = {
   };
 
 export default function HeroBanner({ banner, object_position }: HeroBannerProps) {
-  const domain = import.meta.env.VITE_WP_DOMAIN;
   return (
     <section className="relative h-screen">
       <img

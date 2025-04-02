@@ -1,0 +1,37 @@
+Log created: 2025-04-02 01:17:36
+Type: backup
+[2025-04-02 01:17:37][notice]Start backing up.
+[2025-04-02 01:17:37][notice]server info fcgi:On max execution time: 180 wp version:6.7.2 php version:8.2.23 db version:8.0.35 php ini:safe_mode: memory_limit:512M memory_get_usage:30.17 MB memory_get_peak_usage:30.89 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2025-04-02 01:17:37][notice]Prepare to backup backup_themes files.
+[2025-04-02 01:17:37][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_themes.part001.zip index:4
+[2025-04-02 01:17:37][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_themes.part001.zip success. index:4 file size:3.26 KB
+[2025-04-02 01:17:37][notice]Backing up backup_themes completed.
+[2025-04-02 01:17:37][notice]Prepare to backup backup_plugin files.
+[2025-04-02 01:17:38][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_plugin.part001.zip index:3478
+[2025-04-02 01:17:40][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_plugin.part001.zip success. index:3478 file size:15.66 MB
+[2025-04-02 01:17:40][notice]Backing up backup_plugin completed.
+[2025-04-02 01:17:40][notice]Prepare to backup backup_uploads files.
+[2025-04-02 01:17:41][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_uploads.part001.zip index:200
+[2025-04-02 01:17:41][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_uploads.part001.zip success. index:200 file size:8.37 MB
+[2025-04-02 01:17:41][notice]Backing up backup_uploads completed.
+[2025-04-02 01:17:41][notice]Prepare to backup backup_content files.
+[2025-04-02 01:17:41][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_content.part001.zip index:1
+[2025-04-02 01:17:41][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_content.part001.zip success. index:1 file size:144.00 B
+[2025-04-02 01:17:41][notice]Backing up backup_content completed.
+[2025-04-02 01:17:41][notice]Prepare to backup backup_core files.
+[2025-04-02 01:17:41][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_core.part001.zip index:2796
+[2025-04-02 01:17:44][notice]Compressing zip file:gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_core.part001.zip success. index:2796 file size:14.35 MB
+[2025-04-02 01:17:44][notice]Backing up backup_core completed.
+[2025-04-02 01:17:44][notice]Prepare to backup backup_merge files.
+[2025-04-02 01:17:44][notice]Prepare to zip file. file: gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_themes.zip
+[2025-04-02 01:17:44][notice]Adding zip files completed.gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_all.part001.zip, filesize: 3.39 KB
+[2025-04-02 01:17:44][notice]Prepare to zip file. file: gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_plugin.zip
+[2025-04-02 01:17:44][notice]Adding zip files completed.gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_all.part001.zip, filesize: 14.82 MB
+[2025-04-02 01:17:44][notice]Prepare to zip file. file: gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_uploads.zip
+[2025-04-02 01:17:44][notice]Adding zip files completed.gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_all.part001.zip, filesize: 23.18 MB
+[2025-04-02 01:17:44][notice]Prepare to zip file. file: gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_content.zip
+[2025-04-02 01:17:44][notice]Adding zip files completed.gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_all.part001.zip, filesize: 23.18 MB
+[2025-04-02 01:17:44][notice]Prepare to zip file. file: gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_core.zip
+[2025-04-02 01:17:45][notice]Adding zip files completed.gotravel.local_wpvivid-dbc61b7f07a92_2025-04-02-01-17_backup_all.part001.zip, filesize: 37.10 MB
+[2025-04-02 01:17:45][notice]Backing up backup_merge completed.
+[2025-04-02 01:17:45][notice]Backup completed.

@@ -13,7 +13,7 @@ export const getMenuInfo = async (endpoint : string) => {
 }
 
 export const getPageInfo = async (slug: string) => {
-    const response = await fetch(`${apiUrl}/pages?slug=${slug}&_fields=acf`)
+    const response = await fetch(`${apiUrl}/pages?slug="${slug}"&_fields=acf`)
     if(!response.ok) throw new Error('Failed to fetch page info')
 
     const data = await response.json()

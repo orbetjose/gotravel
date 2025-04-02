@@ -6,6 +6,7 @@ import Inicio from "./pages/Inicio"
 import Servicios from "./pages/Servicios"
 import Paquetes from "./pages/Paquetes"
 import Todo from "./pages/Todo"
+import Blog from "./pages/Blog"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
          <Route path="/servicios" element={<Servicios />} />
          <Route path="/paquetes" element={<Paquetes />} />
          <Route path="/todo-incluido" element={<Todo />} />
+         <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer />
     </Router>

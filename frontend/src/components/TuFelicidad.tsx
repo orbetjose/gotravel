@@ -22,7 +22,7 @@ export default function () {
     <div>
       <a href="#">
         <img
-          className="w-full"
+          className="w-full md:h-[180px] object-cover"
           src={`${domain}wp-content/uploads/2025/03/cintillo.webp`}
           alt=""
         />

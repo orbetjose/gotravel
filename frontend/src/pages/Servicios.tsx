@@ -55,7 +55,7 @@ export default function Servicios() {
         <div className="h-[70vh] 2xl:h-[60vh] relative flex flex-col items-start justify-end text-white">
           <img
             className="h-full w-full object-cover object-top absolute"
-            src={`${domain}wp-content/uploads/2025/03/paquetes.webp`}
+            src={`${domain}wp-content/uploads/2025/04/paquetes-2.webp`}
             alt="Paquetes con vuelos"
           />
           <div className="relative z-10 md:ml-20 md:mb-20 ml-6 mb-6 mr-6">
