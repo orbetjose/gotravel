@@ -1,6 +1,76 @@
 <?php
 
 
+
+
+
+function registrar_apis_contact_form() {
+    
+    register_rest_route('contact-form/v1', '/submit', array(
+        'methods'  => 'POST',
+        'callback' => 'guardar_mensaje_contacto',
+        'permission_callback' => '__return_true',
+    ));
+
+    register_rest_route('contact-form/v1', '/submissions', array(
+        'methods'  => 'GET',
+        'callback' => 'obtener_mensajes_contacto',
+        'permission_callback' => function() {
+            return current_user_can('manage_options');
+        },
+    ));
+}
+add_action('rest_api_init', 'registrar_apis_contact_form');
+
+
+function guardar_mensaje_contacto($request) {
+    global $wpdb;
+    $tabla = $wpdb->prefix . 'contact_messages'; 
+
+    $params = $request->get_json_params();
+    error_log(print_r($params, true));
+
+    if (empty($params['name']) || empty($params['phone']) || empty($params['email']) || empty($params['message'])) {
+        return new WP_Error('campos_faltantes', 'Todos los campos son requeridos.', array('status' => 400));
+    }
+
+    // Sanitizar datos
+    $nombre = sanitize_text_field($params['name']);
+    $telefono = sanitize_text_field($params['phone']);
+    $correo = sanitize_email($params['email']);
+    $mensaje = sanitize_textarea_field($params['message']);
+
+    // Insertar en la base de datos
+    $resultado = $wpdb->insert(
+        $tabla,
+        array(
+            'name'    => $nombre,
+            'phone'   => $telefono,
+            'email'   => $correo,
+            'message' => $mensaje,
+            'date'    => current_time('mysql'),
+        ),
+        array('%s', '%s', '%s', '%s', '%s')
+    );
+
+    if (!$resultado) {
+        return new WP_Error('error_guardado', 'No se pudo guardar el mensaje.', array('status' => 500));
+    }
+
+    return array('success' => true, 'message' => 'Mensaje guardado correctamente');
+}
+
+function obtener_mensajes_contacto() {
+    global $wpdb;
+    $tabla = $wpdb->prefix . 'contact_messages';
+
+    // Obtener los mensajes
+    $mensajes = $wpdb->get_results("SELECT * FROM $tabla ORDER BY date DESC");
+
+    return rest_ensure_response($mensajes);
+}
+
+
 add_filter('rest_prepare_page', function ($response, $post, $request) {
     $acf_fields = get_fields($post->ID);
     if ($acf_fields) {

@@ -87,9 +87,13 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-if ( ! defined( 'WP_DEBUG' ) ) {
-	define( 'WP_DEBUG', false );
-}
+define('WP_DEBUG', false); 
+define('WP_DEBUG_LOG', false); 
+define('WP_DEBUG_DISPLAY', false); 
+
+
+
+
 
 define( 'WP_ENVIRONMENT_TYPE', 'local' );
 /* That's all, stop editing! Happy publishing. */

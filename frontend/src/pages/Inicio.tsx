@@ -6,6 +6,7 @@ import { getPageInfo } from "../helpers/wp";
 import TitleOfertas from "../components/TitleOfertas";
 import TuFelicidad from "../components/TuFelicidad";
 import CintilloIcon from "../components/CintilloIcon";
+import ContactForm from "../components/ContactForm";
 
 export default function Inicio() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
@@ -399,8 +400,9 @@ export default function Inicio() {
             <img className="w-full h-full object-cover object-top" src={`${domain}wp-content/uploads/2025/04/imagen-form.webp`} alt="" />
           </div>
           <div className="md:text-right text-white flex-2 text-center">
-              <h5 className="font-futura-heavy md:text-4xl text-3xl">Contacto</h5>
-              <p className="font-object-regular">Nosotros te ayudamos a elegir tu próximo destino</p>
+              <h5 className="font-futura-heavy md:text-4xl text-3xl mb-2">Contacto</h5>
+              <p className="font-object-regular mb-4">Nosotros te ayudamos a elegir tu próximo destino</p>
+              <ContactForm />
           </div>
         </div>
       </section>
