@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { getMenuInfo } from "../helpers/wp";
 import { Menu } from "../types";
 
@@ -7,6 +7,15 @@ export default function Header() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuItems, setMenuItems] = useState<Menu[]>([]);
+  const navigate = useNavigate();
+  const handlePenultimateClick = (event: React.MouseEvent<HTMLLIElement>) => {
+    event.preventDefault();
+    navigate("/");
+
+    setTimeout(() => {
+      window.scrollTo({ top: document.documentElement.scrollHeight - window.innerHeight -300, behavior: "smooth" });
+    }, 500);
+  }
   useEffect(() => {
     getMenuInfo("navbar")
       .then((data) => setMenuItems(data))
@@ -20,6 +29,8 @@ export default function Header() {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+
   return (
     <header className="absolute top-0 w-full">
       <div className="mx-auto max-w-7xl 2xl:max-w-8xl relative">
@@ -45,8 +56,9 @@ export default function Header() {
                   "/wp",
                   ""
                 );
+                const isPenultimate = index === menuItems.length - 2;
                 return (
-                  <li key={index}>
+                  <li key={index} className={isPenultimate ? "penultimate-class" : ""} onClick={isPenultimate ? handlePenultimateClick : undefined}>
                     <NavLink
                       className={({ isActive }: { isActive: boolean }) =>
                         `${
@@ -82,8 +94,10 @@ export default function Header() {
                     const relativePath = new URL(
                       item.permalink
                     ).pathname.replace("/wp", "");
+                    const isPenultimate = index === menuItems.length - 2;
+
                     return (
-                      <li key={index}>
+                      <li key={index} className={isPenultimate ? "penultimate-class" : ""} onClick={isPenultimate ? handlePenultimateClick : undefined}>
                         <NavLink
                           className={({ isActive }: { isActive: boolean }) =>
                             `${

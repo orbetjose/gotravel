@@ -146,6 +146,10 @@ body {
   .fancy-menu li a:hover {
     color: #24abd5;
   }
+
+  .fancy-menu li a.activeMenu {
+    color: #24abd5;
+  }
   
   .fancy-menu li a.activeMenu::before {
     width: 100%;
@@ -164,10 +168,10 @@ body {
     width: 38px;
   }
   .swiper-button-next {
-    right: -20px;
+    right: -30px;
   }
   .swiper-button-prev {
-    left: -25px;
+    left: -32px;
   }
 
   .pagos img{
@@ -248,3 +252,4 @@ body {
     --color-sapphire-blue: #12586e;
 
   }
+

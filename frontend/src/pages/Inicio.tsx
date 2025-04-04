@@ -38,44 +38,44 @@ export default function Inicio() {
 
   return (
     <>
-      <section className="relative h-screen">
+      <section className="relative h-screen md:h-screen min-[414px]:h-[90vh] 2xl:h-[90vh] ">
         <img
-          className="h-screen w-full object-cover object-top absolute"
+          className="h-screen md:h-screen min-[414px]:h-[90vh] w-full object-cover object-top absolute 2xl:h-[90vh]"
           src={`${domain}wp-content/uploads/2025/03/slide-1.webp`}
           alt="Fondo"
         />
-        <div className="z-10 relative flex justify-center items-end 2xl:items-center w-full h-[95%] md:h-[85%] 2xl:h-screen md:max-w-4xl 2xl:max-w-7xl mx-auto">
+        <div className="z-10 relative flex justify-center items-end 2xl:items-center w-full h-[95%] min-[414px]:h-[85%] md:h-[85%] 2xl:h-screen md:max-w-4xl 2xl:max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center w-full justify-between 2xl:gap-20 px-8 md:px-0">
             <div className="md:w-[50%] 2xl:flex-1">
-              <h2 className="text-white font-futura-heavy md:text-3xl text-xl uppercase pl-4">
+              <h2 className="text-white font-futura-heavy md:text-3xl text-xl uppercase pl-4 2xl:pl-6">
                 Mexico al completo
               </h2>
               <img
-                className="h-45 md:h-60 2xl:h-100 md:w-full 2xl:w-auto"
+                className="h-45 min-[414px]:h-55 md:h-60 2xl:h-110 md:w-full 2xl:w-auto"
                 src={`${domain}wp-content/uploads/2025/03/mexico-imagen.webp`}
                 alt=""
               />
             </div>
             <div className="2xl:flex-1 flex flex-col font-futura-light text-white text-lg gap-4 ">
               <div className="flex flex-col">
-                <span className="text-base">Desde</span>
-                <span className="font-futura-bold md:text-4xl text-3xl">
+                <span className="text-base 2xl:text-xl">Desde</span>
+                <span className="font-futura-bold md:text-4xl text-3xl 2xl:text-5xl">
                   339 USD
                 </span>
-                <span>Por persona en habitación Doble</span>
+                <span className="2xl:text-lg">Por persona en habitación Doble</span>
               </div>
-              <div className="flex flex-col border border-white p-2 rounded-lg md:w-[250px] w-fit">
+              <div className="flex flex-col border border-white p-2 rounded-lg md:w-[250px] w-fit 2xl:w-fit">
                 <span className="text-base">Duración</span>
-                <span className="md:text-2xl text-xl font-futura-bold">
+                <span className="md:text-2xl text-xl font-futura-bold 2xl:text-3xl">
                   8 días / 7 noches
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-base">1 País</span>
-                <span className="font-futura-bold">Mexico</span>
+                <span className="text-base 2xl:text-lg">1 País</span>
+                <span className="font-futura-bold 2xl:text-xl">Mexico</span>
                 <span className="border-b border-white my-2 2xl:max-w-[350px]"></span>
-                <span className="text-base">Salidas</span>
-                <span className="font-futura-bold">
+                <span className="text-base 2xl:text-lg">Salidas</span>
+                <span className="font-futura-bold 2xl:text-xl">
                   Miércoles llegando a ciudad de mexico
                 </span>
               </div>
@@ -342,7 +342,7 @@ export default function Inicio() {
       </section>
       <section>
         <div className="relative">
-          <img className="h-[50vh] md:h-[80vh] w-full object-cover object-top" src={`${domain}/wp-content/uploads/2025/04/fondo-we-care-you.webp`} alt="" />
+          <img className="h-[50vh] md:h-[80vh] 2xl:h-[60vh] w-full object-cover object-top" src={`${domain}/wp-content/uploads/2025/04/fondo-we-care-you.webp`} alt="" />
           <a href="" className="absolute md:bottom-20 bottom-4 left-1/2 -translate-x-1/2 bg-white text-charged-blue font-futura-heavy block w-fit text-lg px-4 py-1 rounded-lg">Más información</a>
         </div>
       </section>
@@ -399,7 +399,7 @@ export default function Inicio() {
           <div className="md:block hidden">
             <img className="w-full h-full object-cover object-top" src={`${domain}wp-content/uploads/2025/04/imagen-form.webp`} alt="" />
           </div>
-          <div className="md:text-right text-white flex-2 text-center">
+          <div className="md:text-right text-white flex-2 text-center" id="Form">
               <h5 className="font-futura-heavy md:text-4xl text-3xl mb-2">Contacto</h5>
               <p className="font-object-regular mb-4">Nosotros te ayudamos a elegir tu próximo destino</p>
               <ContactForm />

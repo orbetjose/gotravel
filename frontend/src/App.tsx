@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ScrollToTop from "./helpers/ScrollToTop"
 import Inicio from "./pages/Inicio"
+import Nosotros from "./pages/Nosotros"
 import Servicios from "./pages/Servicios"
 import Paquetes from "./pages/Paquetes"
 import Todo from "./pages/Todo"
@@ -17,6 +18,7 @@ function App() {
       <ScrollToTop />
       <Routes>
          <Route path="/" element={<Inicio />} />
+         <Route path="/nosotros" element={<Nosotros />} />
          <Route path="/servicios" element={<Servicios />} />
          <Route path="/paquetes" element={<Paquetes />} />
          <Route path="/todo-incluido" element={<Todo />} />

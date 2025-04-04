@@ -1,0 +1,70 @@
+Log created: 2025-04-04 02:16:23
+Type: backup
+[2025-04-04 02:16:23][notice]Start backing up.
+[2025-04-04 02:16:23][notice]server info fcgi:On max execution time: 180 wp version:6.7.2 php version:8.2.23 db version:8.0.35 php ini:safe_mode: memory_limit:512M memory_get_usage:5.43 MB memory_get_peak_usage:5.51 MB extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2025-04-04 02:16:23][notice]Prepare to backup backup_db files.
+[2025-04-04 02:16:23][notice]Start exporting database.
+[2025-04-04 02:16:23][notice]Preparing to dump table wp_contact_messages
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_frmt_form_reports
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_actionscheduler_claims
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_actionscheduler_groups
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_links
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_term_relationships
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_commentmeta
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_litespeed_url
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_term_taxonomy
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_termmeta
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_terms
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_usermeta
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_frmt_form_entry
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_frmt_form_entry_meta
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_users
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_actionscheduler_logs
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_frmt_form_views
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_comments
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_litespeed_url_file
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_options
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_posts
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_actionscheduler_actions
+[2025-04-04 02:16:24][notice]Preparing to dump table wp_postmeta
+[2025-04-04 02:16:24][notice]Exporting database finished.
+[2025-04-04 02:16:24][notice]Start compressing database
+[2025-04-04 02:16:24][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_db.sql
+[2025-04-04 02:16:24][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_db.part001.zip, filesize: 40.54 KB
+[2025-04-04 02:16:24][notice]Compressing database completed
+[2025-04-04 02:16:24][notice]Backing up backup_db completed.
+[2025-04-04 02:16:24][notice]Prepare to backup backup_themes files.
+[2025-04-04 02:16:24][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_themes.part001.zip index:393
+[2025-04-04 02:16:30][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_themes.part001.zip success. index:393 file size:12.57 MB
+[2025-04-04 02:16:30][notice]Backing up backup_themes completed.
+[2025-04-04 02:16:30][notice]Prepare to backup backup_plugin files.
+[2025-04-04 02:16:31][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_plugin.part001.zip index:3820
+[2025-04-04 02:18:27][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_plugin.part001.zip success. index:3820 file size:16.69 MB
+[2025-04-04 02:18:27][notice]Backing up backup_plugin completed.
+[2025-04-04 02:18:27][notice]Prepare to backup backup_uploads files.
+[2025-04-04 02:18:27][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_uploads.part001.zip index:255
+[2025-04-04 02:18:28][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_uploads.part001.zip success. index:255 file size:12.52 MB
+[2025-04-04 02:18:28][notice]Backing up backup_uploads completed.
+[2025-04-04 02:18:28][notice]Prepare to backup backup_content files.
+[2025-04-04 02:18:28][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_content.part001.zip index:2
+[2025-04-04 02:18:28][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_content.part001.zip success. index:2 file size:238.00 B
+[2025-04-04 02:18:28][notice]Backing up backup_content completed.
+[2025-04-04 02:18:28][notice]Prepare to backup backup_core files.
+[2025-04-04 02:18:28][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_core.part001.zip index:2799
+[2025-04-04 02:19:28][notice]Compressing zip file:gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_core.part001.zip success. index:2799 file size:41.00 MB
+[2025-04-04 02:19:28][notice]Backing up backup_core completed.
+[2025-04-04 02:19:28][notice]Prepare to backup backup_merge files.
+[2025-04-04 02:19:28][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_db.zip
+[2025-04-04 02:19:28][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 40.42 KB
+[2025-04-04 02:19:28][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_themes.zip
+[2025-04-04 02:19:28][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 12.56 MB
+[2025-04-04 02:19:28][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_plugin.zip
+[2025-04-04 02:19:29][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 28.36 MB
+[2025-04-04 02:19:29][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_uploads.zip
+[2025-04-04 02:19:29][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 40.84 MB
+[2025-04-04 02:19:29][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_content.zip
+[2025-04-04 02:19:29][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 40.84 MB
+[2025-04-04 02:19:29][notice]Prepare to zip file. file: gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_core.zip
+[2025-04-04 02:19:30][notice]Adding zip files completed.gotravel.local_wpvivid-c1d7d880a4a39_2025-04-04-02-16_backup_all.part001.zip, filesize: 81.41 MB
+[2025-04-04 02:19:30][notice]Backing up backup_merge completed.
+[2025-04-04 02:19:30][notice]Backup completed.
